@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 85vw;
+    padding: 4%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-left: 81px;
+}
+
+main section {
+    width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+section article {
+
+    width: 216px;
+    margin: 0 0 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: transparent 1px solid;
+
+}
+
+section article:hover {
+    border:#37268C 1px solid;
+    cursor: pointer;
+}
+
+.category {
+    background: #2E245E;
+    width: 84px;
+    height: 21px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.nomeItem {
+    font-weight: bold;
+    font-size: 18px;
+    color: #292929;
+    width: 190px;
+    height: 47px;
+}
+
+.destricao {
+    color: #242424;
+    font-size: 14px;
+    margin-bottom: 12px;
+    height: 78px;
+}
+
+.price {
+    color: #2E245E;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: semibold;
+}
+
+.adcCarrinho {
+    color: #242424;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 12px;
+    text-align: start;
+    background: transparent;
+}
+
+.adcCarrinho:hover {
+    color: #37268C;
+}
+
+form {
+    box-sizing: border-box;
+    display: flex;
+    width: 347px;
+}
+
+.box {
+    background: #F5F5F5;
+    border: none;
+    width: 251px;
+    height: 49px;
+}
+
+.bntPesquisar {
+    background: #37268C;
+    color: white;
+    width: 96px;
+    height: 50px;
+    border: none;
+}
+
+.bntPesquisar:hover {
+    background: #2b00fff6;
+}
+
+div .carrinho {
+    background: #37268C;
+    width: 347px;
+    height: 50px;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    line-height: 42px;
+    margin-top: 20px;
+}
+
+
+div .paragraph {
+    font-size: 22px;
+    color: #292929;
+    height: 0px;
+    line-height: 20px;
+}
+
+.carrinho {
+    background: #37268C;
+    width: 347px;
+    height: 50px;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    line-height: 42px;
+}
+
+
+
+.paragraph {
+    font-size: 22px;
+    color: #292929;
+    height: 0px;
+    line-height: 20px;
+}
+
+.adicionar {
+    color: #242424;
+    font-size: 14px;
+}
+
+aside {
+    width: 28%;
+}
+
+.position {
+    background: #F5F5F5;
+    width: 347px;
+    height: 214px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
