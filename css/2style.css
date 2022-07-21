@@ -6,13 +6,16 @@ body, ul {
     font-family: 'Inter', sans-serif;
 }
 
-a {
-    color: #292929;
-    text-decoration: none;
+.hall {
+    color: rgb(41, 41, 41);
+    border: none;
+    background-color: transparent;
+    margin-left: 25px;
 }
 
-a:hover {
-    background: rgba(0, 0, 0, 0.05);
+ul .hall:hover {
+    background-color: rgba(2, 2, 2, 0.432);
+    cursor: pointer;
 }
 
 header h1 {

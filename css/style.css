@@ -16,7 +16,8 @@ main {
 }
 
 main section {
-    width: 708px;
+    width: 773px;
+    gap: 54px 59px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -36,7 +37,7 @@ section article {
 }
 
 section article:hover {
-    border:#37268C 1px solid;
+    border: #37268C 1px solid;
     cursor: pointer;
 }
 
@@ -95,6 +96,7 @@ form {
     border: none;
     width: 251px;
     height: 49px;
+    margin-bottom: 25px;
 }
 
 .bntPesquisar {
@@ -125,7 +127,6 @@ div .carrinho {
 div .paragraph {
     font-size: 22px;
     color: #292929;
-    height: 0px;
     line-height: 20px;
 }
 
@@ -143,10 +144,7 @@ div .paragraph {
 
 
 .paragraph {
-    font-size: 22px;
-    color: #292929;
-    height: 0px;
-    line-height: 20px;
+    margin-bottom: -90px;
 }
 
 .adicionar {
@@ -156,6 +154,8 @@ div .paragraph {
 
 aside {
     width: 28%;
+    display: flex;
+    flex-direction: column;
 }
 
 .position {
@@ -166,4 +166,92 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.dentro_carrinho {
+    display: flex;
+    overflow-y: scroll;
+    height: 200px;
+    margin-top: 32px;
+    width: 344px;
+}
+
+
+.dentro_carrinho::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 5px;
+
+}
+
+.dentro_carrinho::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+.ulCarrinho {
+    list-style: none;
+}
+
+.imagem_dentro_carrinho {
+    width: 88px;
+    height: 67px;
+    background: #F5F5F5;
+}
+
+.removeCar {
+    margin-bottom: 31px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.ulCarrinho li {
+    width: 308px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+
+.ulCarrinho li .price {
+    font-size: 14px;
+    color: black;
+}
+
+.ulCarrinho ul li .nomeIte {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.ulCarrinho ul .price {
+    font-size: 14px;
+
+}
+.divisao{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-left: 8px;
+}
+.final{
+    display: flex;
+    padding: 20px;
+    background-color: #292929;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+    flex-direction: column;
+    width: 304px;
+    margin-top: 5px;
+
+}
+.preco{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    color: white;
 }

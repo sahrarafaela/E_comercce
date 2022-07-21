@@ -22,89 +22,53 @@
                 MENU <span id="hamburguer"></span>
             </button>
             <ul class="menu">
-                <li> <a href="" target="_blank" class="link">Todos</a></li>
-                <li> <a href="" target="_blank" class="link">Acessórios</a></li>
-                <li> <a href="" target="_blank" class="link">Calçados</a></li>
-                <li> <a href="" target="_blank" class="link">Camisetas</a></li>
+                <button class="hall" type="submit"> </button>
+                <li> <button class="hall " type="submit">Todos</button></li>
+                <li> <button class="hall " type="submit">Acessórios</button></li>
+                <li> <button class="hall " type="submit">Calçados</button></li>
+                <li> <button class="hall " type="submit">Camisetas</button></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <article>
-            <img src="./img/camiseta_preta.svg" alt="">
-            <p class="category"> Camisetas</p>
-            <p class="nomeItem">Short-Sleeve T-Shirt</p>
-            <p class="destricao">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais fino...
-            </p>
-            <p class="price">R$ 100,00</p>
-            <button class="adcCarrinho">Adicionar ao carrinho</button>
-        </article>
-        <article>
-            <img src="./img/gorro.svg" alt="">
-            <p class="category">Acessórios</p>
-            <p class="nomeItem">Black Hat</p>
-            <p class="destricao">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante
-                que...
-            </p>
-            <p class="price">R$ 100,00</p>
-            <button class="adcCarrinho">Adicionar ao carrinho</button>
-        </article>
-       <article>
-            <img src="./img/jaqueta.svg" alt="">
-            <p class="category">Camisetas</p>
-            <p class="nomeItem">Champion Packable Jacket</p>
-            <p class="destricao">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de
-                poliést...</p>
-            <p class="price">R$ 100,00</p>
-            <button class="adcCarrinho">Adicionar ao carrinho</button>
-        </article>
-        <article>
-            <img src="./img/mascara.svg" alt="">
-            <p class="category">Acessórios</p>
-            <p class="nomeItem">Mask</p>
-            <p class="destricao">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui
-                presilhas...</p>
-            <p class="price">R$ 100,00</p>
-            <button class="adcCarrinho">Adicionar ao carrinho</button>
-        </article>
-       <article>
-            <img src="./img/camiseta_branca.svg" alt="">
-            <p class="category">Camisetas</p>
-            <p class="nomeItem">T-Shirt</p>
-            <p class="destricao">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal
-                de...</p>
-            <p class="price">R$ 100,00</p>
-            <button class="adcCarrinho"> Adicionar ao carrinho</button>
-        </article>
-        <article>
-            <img src="./img/moletom.svg" alt="">
-            <p class="category">Camisetas</p>
-            <p class="nomeItem">Lightweight Jacket</p>
-            <p class="destricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta
-                vibrante...</p>
-            <p class="price">R$ 100,00</p>
-            <button class="adcCarrinho">Adicionar ao carrinho</button>
-        </article>
+       
         </section>
-    
-    
 
-   <aside>
-    <form>
-        <input type="text" placeholder="Digite aqui sua pesquisa" class="box">
-        <button type="submit" class="bntPesquisar">Pesquisar</button>
-    </form>
-    <div>
+
+
+        <aside>
+            <form>
+                <input type="text" placeholder="Digite aqui sua pesquisa" class="box">
+                <button type="submit" class="bntPesquisar">Pesquisar</button>
+            </form> 
+            <div>
         <h2 class="carrinho">Carrinho de compras</h2>
-        <div class="position">
-            <p class="paragraph">Carrinho vazio</p>
-            <p class="adicionar">Adicionar item</p>
+        <!-- <div class="position"> -->
+            <!-- <p class="paragraph">Carrinho vazio</p>
+            <p class="adicionar">Adicionar item</p> -->
+        </div>
+        </div> 
+            <div class="dentro_carrinho">
+                <ul class="ulCarrinho"> 
+               
+                </ul>
+            </div>
+
+            <div class="final">
+              <div class=" pri"></div>
+            <p>Quantidade: </p>
+            <p id="preco quant"> </p> 
+            <div></div>
+            <p>Total: </p>
+            <p id="preco tot"></p>
         </div>
         </div>
-    </aside>
-    <script src="./js/btn.js"></script>
-</main>
+        </aside>
+        <script src="./js/btn.js"></script>
+    <script src="./js/database.js"></script>
+    <script src="./js/index.js"></script>
+    </main>
 </body>
 
 </html>
