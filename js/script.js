@@ -13,8 +13,8 @@ function soma(ay) {
     console.log(valure)
     console.log(soma)
     valure.innerText = soma
-    
-    
+
+
 }
 
 function tags(obj) {
@@ -28,7 +28,7 @@ function tags(obj) {
         section.appendChild(article)
         let imge = document.createElement('img')
         imge.src = obj[i].img
-      
+
         let paragraph1 = document.createElement('p')
         paragraph1.classList.add('category')
         paragraph1.innerText = obj[i].tag[0]
@@ -48,50 +48,18 @@ function tags(obj) {
         button.innerText = obj[i].addCart
         article.append(imge, paragraph1, paragraph2, paragraph3, paragraph4, button)
 
-        button.setAttribute('id', obj.id)
+
         button.addEventListener('click', (event) => {
-            vaz.push(obj[i])
-            console.log(vaz)
-            carrinho(vaz)
-            soma(vaz)
-            final(vaz)
+
+            console.log(event.target)
+            if (event.target.id == obj[i].id) {
+                vaz.push(obj[i])
+                carrinho(vaz)
+            }
 
         })
+        
     }
-
-    // let aside = document.createElement('aside')
-    // let dentroDoCarrinho = document.getElementsByClassName('dentro_carrinho')
-    // let ul = document.querySelector ('ul')
-    // let form = document.createElement('form')
-    // let input = document.createElement('input')
-    // input.setAttribute = ('type', 'text')
-    // input.classList.add('box')
-    // input.placeholder = 'Digite aqui sua pesquisa'
-    // let btnSearch = document.createElement('button')
-    // btnSearch.type = 'submit'
-    // btnSearch.classList.add('bntPesquisar')
-    // btnSearch.innerText = 'Pesquisar'
-    // let div = document.createElement('div')
-    // div.classList.add('car')
-    // let h2 = document.createElement('h2')
-    // h2.classList.add('carrinho')
-    // h2.innerText = 'Carrinho de compras'
-    // let div2 = document.createElement('div')
-    // div2.classList.add('position')
-    // let p = document.createElement('p')
-    // p.classList.add('paragraph')
-    // p.innerText = 'Carrinho vazio'
-    // let p2 = document.createElement('p')
-    // p2.classList.add('adicionar')
-    // p2.innerText = 'Adicionar itens'
-
-
-    // section.append(aside)
-    // aside.append(form, div, dentroDoCarrinho)
-    // form.append(input, btnSearch)
-    // div.append(h2, div2)
-    // div2.append(p, p2)
-    // console.log(aside)
 
     return main
 }
@@ -99,9 +67,9 @@ tags(data)
 
 function carrinho(obj) {
     let ul = document.querySelector('.ulCarrinho')
+    ul.innerHTML = ''
     for (let i = 0; i<obj.length; i++){
-    let li = document.createElement('li')
-    
+    let lista = document.createElement('li')
     let im = document.createElement('img')
     im.src = obj[i].img
     im.classList.add('imagem_dentro_carrinho')
@@ -116,14 +84,24 @@ function carrinho(obj) {
     bu.innerHTML = "Remover produto"
     bu.classList.add('removeCar')
     bu.id = obj[i].id
-    divCarrinho.append(pp, pp2, bu)
-    li.append(im, divCarrinho)
-    
-    ul.appendChild(li)
- }
- return li
 
+    divCarrinho.append(pp, pp2, bu)
+    lista.append(im, divCarrinho)
+    ul.appendChild(lista)
     
+    bu.addEventListener('click', e =>{
+        if (e.target.id == obj[i].id) {
+            vaz.splice([i], 1)
+           
+          console.log(vaz)
+           carrinho(vaz)
+           
+        }
+    })
+}
+    console.log(ul)
+    return ul
+
 }
 
 // function final(arr) {
